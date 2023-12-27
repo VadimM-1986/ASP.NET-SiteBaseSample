@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  height: 3px;
+  background: #919191;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.blockItem button {
+    padding: 5px 10px;
+    border: #eee solid;
+    border-radius: 5px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    border: #28df1a solid;
+    border-radius: 5px;
+    margin: 8px 0;
+    cursor: pointer;
+    background: #1de312;
+}
+
+.item label {
+    font-weight: 600;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background: white;
+  color: #000;
+}
+
+header {
+  width: 100%;
+  background: #3D3D3D;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  float: left;
+}
+
+.all-header {
+  width: 70%;
+  margin: 0 15%;
+}
+
+.logo img {
+  width: 160px;
+  margin-left: 10px;
+  float: left;
+}
+
+.header-main {
+  float: left;
+  margin-left: 200px;
+}
+
+.header-menu-link{
+  margin-right: 30px;
+  font-size: 21px;
+  font-weight: 500;
+  color: #fff;
+}
+.header-menu-link:hover{
+  color: #bbb6b6;
+}
+
+
+main {
+    float: left;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+main p {
+  margin-top: 15px;
+}
+
+main h1 {
+  color: #d08181;
+}
+
+main h2 {
+  color: #d08181;
+}
+
+.section {
+    border-radius: 5px;
+    width: 100%;
+    padding: 30px 50px;
+}
+
+.btnus {
+    background: #83ac0e;
+    border-radius: 3px;
+    padding: 5px 10px;
+    width: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.blockItem {
+    border: #eee solid;
+    border-radius: 7px;
+    padding: 15px 25px;
+    margin-top: 35px;
+    width: 500px;
+    float: left;
+    margin-right: 25px;
+}
+
+
+footer {
+    width: 100%;
+    background: #3D3D3D;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    float: left;
+}
+
+.footer-main {
+  text-align: center;
+}
+
+.footer-main h3 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.footer-menu-link {
+  margin-right: 30px;
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.footer-main .footer-menu-link:nth-child(2) {
+  background: #e77b7b;
+}
+.footer-main .footer-menu-link:nth-child(3) {
+  background: #77b3d9;
+}
+.footer-main .footer-menu-link:nth-child(4) {
+  background: #6a71a7;
+}
+.footer-main .footer-menu-link:nth-child(5) {
+  background: #b08d6d;
+}
+.footer-menu-link:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.copir {
+  color: #fff;
+  font-size: 16px;
+  margin: 30px 0px 0px 100px;
+  font-weight: 600;
+}

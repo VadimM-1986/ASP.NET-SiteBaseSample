@@ -1,0 +1,25 @@
+﻿@model ModelDB
+@{
+    ViewData["Title"] = "Добавление нового товара";
+    ViewData["H1"] = "Добавление товаров";
+}
+
+
+
+<div class="item">
+    <form method="post" asp-controller="catalog">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name" class="error"></span>
+
+        <label asp-for="Anons"></label>
+        <input asp-for="Anons" />
+        <span asp-validation-for="Anons" class="error"></span>
+
+        <label asp-for="Fulltext"></label>
+        <input asp-for="Fulltext" /> 
+        <span asp-validation-for="Fulltext" class="error"></span>
+
+        <input type="submit" value="Добавить товар" />
+    </form>
+</div>

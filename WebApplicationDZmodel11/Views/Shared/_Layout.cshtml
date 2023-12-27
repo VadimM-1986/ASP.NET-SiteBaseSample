@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+
+
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+
+</head>
+
+<body>
+
+      <header>
+        <div class="all-header">
+            <div class="logo">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <img src="~/img/Ford-Logo.png" alt="Logo"> </a>
+            </div>
+            <div class="header-main">
+                <a class="header-menu-link" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
+                <a class="header-menu-link" asp-area="" asp-controller="Home" asp-action="uslugi">Наши услуги</a>
+                <a class="header-menu-link" asp-area="" asp-controller="catalog" asp-action="Index">Каталог</a>
+                <a class="header-menu-link" asp-area="" asp-controller="catalog" asp-action="AddItem">Добавить товар</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="section">
+        <div class="container">
+                <h1>@ViewData["H1"]</h1>
+                @RenderBody()
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <h3>Классный футер!</h3>
+            <div class="footer-menu-link">YouTube</div>
+            <div class="footer-menu-link">Twitter</div>
+            <div class="footer-menu-link">FaceBook</div>
+            <div class="footer-menu-link">Instagram</div>
+        </div>
+        <div class="copir">Все права защищены ©️</div>
+    </footer>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

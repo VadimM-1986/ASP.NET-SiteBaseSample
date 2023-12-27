@@ -1,0 +1,29 @@
+﻿@model List<ModelDB>
+
+@{
+    ViewData["Title"] = "Общий каталог товаров";
+    ViewData["H1"] = "Каталог товаров";
+}
+
+
+
+        @foreach (var el in Model)
+        {
+            <div class="blockItem">
+                <h2>@el.Name</h2>
+                <h3>@el.Anons</h3>
+                <p>@el.Fulltext</p>
+                <p>@el.Id</p>
+
+                <form method="post" action="/catalog/@el.Id/delete">
+                    <button type="submit">Удалить товар</button>
+                </form>
+
+                <form method="post" action="/catalog/@el.Id/formedit">
+                    <button type="submit">Редактировать товар</button>
+                </form>
+            </div>
+        }
+
+
+

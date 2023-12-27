@@ -1,0 +1,29 @@
+﻿@model List<ModelDB>
+@{
+    ViewData["Title"] = "Редактирование товара";
+    ViewData["H1"] = "Редактирование товара";
+}
+
+
+        @foreach (var el in Model)
+        {
+        <div class="item">
+        <form method="post" action="/catalog/@el.Id/edit">
+
+                    <label asp-for="@el.Name"></label>
+                    <input asp-for="@el.Name" name="Name" />
+                    <span asp-validation-for="@el.Name" class="error"></span>
+
+                    <label asp-for="@el.Anons"></label>
+                    <input asp-for="@el.Anons" name="Anons" />
+                    <span asp-validation-for="@el.Anons" class="error"></span>
+
+                    <label asp-for="@el.Fulltext"></label>
+                    <input asp-for="@el.Fulltext" name="Fulltext" />
+                    <span asp-validation-for="@el.Fulltext" class="error"></span>
+
+                <input type="submit" value="Изменить" />
+
+            </form>
+        </div>
+        }
